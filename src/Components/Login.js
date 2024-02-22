@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthState
 import { auth } from "../Utils/firebase"
 import { addUser } from '../Utils/Slice/userSlice.js';
 import { useDispatch } from 'react-redux';
+import { BG_URL } from '../Utils/Constants/constants';
 
 const Login = () => {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -68,7 +69,7 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <img className='absolute z-10' src="https://assets.nflxext.com/ffe/siteui/vlv3/4da5d2b1-1b22-498d-90c0-4d86701dffcc/98a1cb1e-5a1d-4b98-a46f-995272b632dd/IN-en-20240129-popsignuptwoweeks-perspective_alpha_website_medium.jpg" alt="background" />
+      <img className='absolute z-10' src={BG_URL} alt="background" />
       <div className='absolute w-1/3 z-50 top-40 left-1/3'>
         <form className='text-white bg-black bg-opacity-80 p-5 rounded-lg' onSubmit={(e)=>{e.preventDefault()}}>
           <h1 className='text-lg py-6'>{isSignUp ? "Sign Up" : "Sign In"}</h1>
