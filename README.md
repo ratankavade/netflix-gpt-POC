@@ -25,9 +25,14 @@ GPT seach functionality is in progress now..
 # How to install and run the project
 ## git clone
 Clone the respective git repository by selecting respective branch. Ex. git clone -b <branch_name> <repository_url>
+git clone -b netflix-gpt-poc https://github.com/ratankavade/netflix-gpt-POC.git
 
 ## npm install
 Run the npm install command inside main folder.
 
 ## npm run start
 Start application compilation by running npm run start command and run application in browser. If 3000 port is availabe this application will run on http://localhost:3000/
+
+# Deployment Link
+You will find my deployed application on this link:
+https://netflix-gpt-7439e.web.app/
