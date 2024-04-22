@@ -25,7 +25,7 @@ GPT seach functionality is in progress now..
 # How to install and run the project
 ## git clone
 Clone the respective git repository by selecting respective branch. Ex. git clone -b <branch_name> <repository_url>
-git clone -b netflix-gpt-poc https://github.com/ratankavade/netflix-gpt-POC.git
+##### git clone -b netflix-gpt-poc https://github.com/ratankavade/netflix-gpt-POC.git
 
 ## npm install
 Run the npm install command inside main folder.
