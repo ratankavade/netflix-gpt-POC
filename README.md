@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Netflix-GPT
+## Description
+This is a react application where I try to make application like Netflix. I have added some key features of react like Hooks, Forms, Validations, fetch API's, Custome Hooks, Redux, etc.
+I have used the TMDB (The Movie Database) api's to fech different types of movies list and tailwind CSS for styles, also to register user I used the firebase database.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Sign In / Sign Up
+For background image and for logo I used the netflix images. On landing page user can see the login page. If user is not resgisted then needs to do Sign Up first then using registerd credentials user can login via Sign In screen. Here I have apply validations for registerd user ID and password. For Sign In, Sign Up, Logout I have used the firebase api's and database.
+![Screen Shot 2024-04-22 at 1 07 09 PM](https://github.com/ratankavade/netflix-gpt-POC/assets/84063556/e158d3e7-63c4-486c-a88b-cf85b8393d42)
+![Screen Shot 2024-04-22 at 1 08 34 PM](https://github.com/ratankavade/netflix-gpt-POC/assets/84063556/5e7992a6-84c5-49c4-adce-05fa4b7ce3d6)
 
-## Available Scripts
 
-In the project directory, you can run:
+### Browse Screen
+Once user logged in it will redirect to Browse Screen. To store user details I used Redux store. In browse screen user can see the name of logged in user in header. GPT search button, use name and sign out button will only visible on header once user logged in. A background vedio will play automatically on mute and the name and overview of latest movie will appear on screen.
+User can see the list of Now Playing movies, Top Rated movies, Popular movies and upcomming movies on screen with horizontal scroll bar. I have get this data from TMDB through api's and store them in different slice of Redux store.
+![Screen Shot 2024-04-22 at 1 09 38 PM](https://github.com/ratankavade/netflix-gpt-POC/assets/84063556/9c5778bd-87f5-49c8-bd63-b193ec26898c)
+![Screen Shot 2024-04-22 at 1 10 24 PM](https://github.com/ratankavade/netflix-gpt-POC/assets/84063556/145d86eb-32fb-4993-8f3f-f9f00e7be399)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### GPT Search
+User will redirect to GPT Search screen once click on GPT Search page. GPT Search button will toggle between GPT Search and Back to Home button. On this screen user will see the serch bar container. 
+GPT seach functionality is in progress now..
+![Screen Shot 2024-04-22 at 1 12 00 PM](https://github.com/ratankavade/netflix-gpt-POC/assets/84063556/78aae409-033b-42fb-b7b5-1e1956ec7575)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# How to install and run the project
+## git clone
+Clone the respective git repository by selecting respective branch. Ex. git clone -b <branch_name> <repository_url>
+##### git clone -b netflix-gpt-poc https://github.com/ratankavade/netflix-gpt-POC.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## npm install
+Run the npm install command inside main folder.
 
-### `npm run build`
+## npm run start
+Start application compilation by running npm run start command and run application in browser. If 3000 port is availabe this application will run on http://localhost:3000/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Deployment Link
+You will find my deployed application on this link:
+https://netflix-gpt-7439e.web.app/
