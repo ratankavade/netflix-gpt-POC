@@ -3,6 +3,7 @@ import { createBrowserRouter,  } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
 import Login from './Login'
 import Browse from './Browse'
+import QueryBuilder from './QueryBuilder'
 
 const Body = () => {
 
@@ -14,7 +15,11 @@ const Body = () => {
       {
           path: "/browse",
           element: <Browse />
-      }
+      },
+      {
+        path: "/queryBuilder",
+        element: <QueryBuilder />
+    }
   ])
 
   return (

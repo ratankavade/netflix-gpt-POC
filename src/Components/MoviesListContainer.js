@@ -17,3 +17,4 @@ const MoviesListContainer = () => {
 }
 
 export default MoviesListContainer
+
